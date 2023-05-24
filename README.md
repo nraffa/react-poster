@@ -10,7 +10,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/react-poster.png" alt="Logo" width="300" style:border="1px solid black"  height="80">
+    <img src="resources/react-poster.png" alt="Logo" width="300" style:border="1px solid black"  height="80">
   </a>
 
   <h3 align="center">React-Poster-App</h3>
@@ -58,6 +58,10 @@ To get a local copy up and running follow these simple example steps.
    npm run dev
    ```
 
+### Demo
+<img src="resources/demo.gif" alt="demo" >
+
+<br/>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
