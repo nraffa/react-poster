@@ -24,7 +24,7 @@
 
 
 
-You can go and have a look by going to...
+You can go and have a look by going to: https://react-poster-blog.netlify.app/
 
 <br/>
 
