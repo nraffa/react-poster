@@ -29,7 +29,7 @@ function PostsList({isPosting, onStopPosting}) {
       )}
       <ul className={classes.posts}>
         <Post author={enteredAuthor} body={enteredBody} />
-        <Post author="Cochi" body="Le gusta mi cola" />
+        <Post author="Nicolas" body="Argentina is World Champion!" />
       </ul>
     </>
   );
