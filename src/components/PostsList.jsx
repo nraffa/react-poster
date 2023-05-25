@@ -9,11 +9,11 @@ function PostsList({ isPosting, onStopPosting }) {
   const [posts, setPosts] = useState([]);
 
   function addPostHandler(postData) {
-    setPosts((postData) => {
-      return [postData, ...posts];
+    setPosts((existingPosts) => {
+      return [postData, ...existingPosts];
     });
-    console.log([postData, ...posts])
-}
+    console.log([postData, ...posts]);
+  }
 
   return (
     <>
@@ -23,7 +23,9 @@ function PostsList({ isPosting, onStopPosting }) {
         </Modal>
       )}
       <ul className={classes.posts}>
-        <Post author="Nicolas" body="Argentina is World Champion!" />
+        {posts.map((post) => 
+          <Post keys={post.body} author={post.author} body={post.body} />
+        )}
       </ul>
     </>
   );
