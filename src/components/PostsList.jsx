@@ -24,7 +24,7 @@ function PostsList({ isPosting, onStopPosting }) {
       )}
       <ul className={classes.posts}>
         {posts.map((post) => 
-          <Post keys={post.body} author={post.author} body={post.body} />
+          <Post key={post.body} author={post.author} body={post.body} />
         )}
       </ul>
     </>
