@@ -28,7 +28,13 @@
     text-decoration: none;
   }
 
-  
+  .closeIcon{
+    position: absolute;
+    right: 0.6rem;
+    top: 0.6rem;
+    width: 10%;
+  }
+
   @keyframes animate-in {
     from {
       opacity: 0;

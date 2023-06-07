@@ -36,7 +36,7 @@ export default NewPost;
 export async function action({request}) {
   const formData = await request.formData()
   const postData = Object.fromEntries(formData) //  { body: '...', author: '...' }
-  
+  console.log(postData)
   await fetch("http://localhost:8080/posts", {
     method: "POST",
     headers: {
@@ -44,7 +44,10 @@ export async function action({request}) {
     },
     body: JSON.stringify(postData),
   }).catch(function (error) {
+    console.log(error);
     return error.message;
-  });
+  })
+  .then();
   return redirect("/");
 }
+
